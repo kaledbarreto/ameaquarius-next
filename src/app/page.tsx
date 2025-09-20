@@ -1,14 +1,23 @@
-import Hero from "@/components/Hero";
+import AboutTransformation from "@/components/home/AboutTransformation";
+import Achievements from "@/components/home/Achievements";
+import Footer from "@/components/home/Footer";
+import Governance from "@/components/home/Governance";
+import Hero from "@/components/home/Hero";
+import JoinUs from "@/components/home/JoinUs";
+import Location from "@/components/home/Location";
+import WhoWeAre from "@/components/home/WhoWeAre";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <section className="w-full min-h-[400px] bg-white flex items-center justify-center">
-        <span className="text-gray-700 text-2xl">
-          Section de teste: fundo branco
-        </span>
-      </section>
+      <AboutTransformation />
+      <WhoWeAre />
+      <Governance />
+      <Achievements />
+      <Location />
+      <JoinUs />
+      <Footer />
     </main>
   );
 }

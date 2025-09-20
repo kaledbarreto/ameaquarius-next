@@ -1,10 +1,10 @@
 import React from "react";
 import { ChevronDown, Users, Home, Award } from "lucide-react";
-import HeroBackground from "../assets/images/bg.png";
+import HeroBackground from "../../assets/images/home/hero_bg.png";
 
 export default function Hero() {
   return (
-    <section className="hero relative h-[100vh] md:h-[90vh] min-h-[700px] overflow-hidden">
+    <section className="hero relative h-[100vh] md:h-[95vh] min-h-[700px] overflow-hidden">
       {/* Background com overlay gradiente */}
       <div className="absolute inset-0 w-full h-full">
         {/* Imagem de fundo */}
@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:p-12 h-full flex items-start">
         <div className="max-w-2xl md:max-w-4xl mx-auto text-center">
           {/* Título principal */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-extra-tight mt-78 md:mt-40">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-extra-tight mt-78 md:mt-56">
             Bem-vindo ao <br />
             <span className="bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent uppercase">
               Bairro Aquarius
@@ -69,7 +69,7 @@ export default function Hero() {
 
           {/* Call to Actions */}
           <div className="flex flex-col md:flex-row gap-3 md:gap-4 justify-center items-center">
-            <button className="group px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button className="group px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer">
               <span className="flex items-center gap-2">
                 Associe-se Agora
                 <div className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">

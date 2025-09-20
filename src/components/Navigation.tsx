@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Instagram, PhoneCall } from "lucide-react";
+import {
+  Instagram,
+  PhoneCall,
+  MessageCircle as LucideWhatsapp,
+} from "lucide-react";
 import { usePathname } from "next/navigation";
 import Logo from "@/assets/images/logo.png";
 import { cn } from "@/lib/utils";
@@ -20,9 +24,23 @@ function FloatingSocial() {
         href="https://instagram.com/ameaquarius"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-gray-100 rounded-full shadow-lg p-3 hover:bg-blue-100 transition-colors duration-300"
+        className="bg-gray-100 rounded-full shadow-lg p-3 hover:bg-[#DD2A7B]/10 transition-colors duration-300"
       >
-        <Instagram className="text-blue-600 w-6 h-6" />
+        {/* Instagram gradient: #F58529, #DD2A7B, #8134AF, #515BD4 */}
+        <svg width="24" height="24" viewBox="0 0 24 24" className="w-6 h-6">
+          <defs>
+            <linearGradient id="instagram-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#F58529" />
+              <stop offset="50%" stopColor="#DD2A7B" />
+              <stop offset="75%" stopColor="#8134AF" />
+              <stop offset="100%" stopColor="#515BD4" />
+            </linearGradient>
+          </defs>
+          <Instagram
+            className="w-6 h-6"
+            style={{ fill: "url(#instagram-gradient)" }}
+          />
+        </svg>
       </a>
       <a
         href="https://wa.me/5581999999999"
@@ -30,7 +48,7 @@ function FloatingSocial() {
         rel="noopener noreferrer"
         className="bg-gray-100 rounded-full shadow-lg p-3 hover:bg-green-100 transition-colors duration-300"
       >
-        <PhoneCall className="text-blue-500 w-6 h-6" />
+        <LucideWhatsapp className="text-green-500 w-6 h-6" />
       </a>
     </div>
   );
