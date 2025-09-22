@@ -1,6 +1,6 @@
 import AboutTransformation from "@/components/home/AboutTransformation";
 import Achievements from "@/components/home/Achievements";
-import Footer from "@/components/home/Footer";
+import Footer from "@/components/Footer";
 import Governance from "@/components/home/Governance";
 import Hero from "@/components/home/Hero";
 import JoinUs from "@/components/home/JoinUs";

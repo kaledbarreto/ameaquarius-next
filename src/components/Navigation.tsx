@@ -1,20 +1,20 @@
 "use client";
 
-import Link from "next/link";
-import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
-import {
-  Instagram,
-  PhoneCall,
-  MessageCircle as LucideWhatsapp,
-} from "lucide-react";
-import { usePathname } from "next/navigation";
 import Logo from "@/assets/images/logo.png";
 import { cn } from "@/lib/utils";
+import {
+  Instagram,
+  MessageCircle as LucideWhatsapp,
+  Menu,
+  X,
+} from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Sobre Nós", href: "/sobre" },
+  { name: "Nossa História", href: "/OurHistory" },
 ];
 
 function FloatingSocial() {

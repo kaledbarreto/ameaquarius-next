@@ -1,21 +1,19 @@
-import React from "react";
 import {
-  Phone,
-  Mail,
-  MapPin,
+  Award,
   Clock,
   Facebook,
-  Instagram,
-  Youtube,
-  Linkedin,
-  Heart,
-  ArrowUp,
   FileText,
-  Users,
+  Heart,
+  Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
   Shield,
-  Award,
+  Users,
+  Youtube,
 } from "lucide-react";
-import Logo from "../../assets/images/logo.png";
+import Logo from "@/assets/images/logo.png";
 
 export default function Footer() {
   const quickLinks = [
