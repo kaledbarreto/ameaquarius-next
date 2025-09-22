@@ -3,8 +3,8 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Ameaquarius Next",
-  description: "A Next.js boilerplate project for Ameaquarius",
+  title: "Ameaquarius",
+  description: "Site oficial da Ameaquarius",
 };
 
 export default function RootLayout({
@@ -14,6 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/logoIcon.png" />
+      </head>
       <body className="antialiased">
         <Navigation />
         {children}

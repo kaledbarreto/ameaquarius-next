@@ -157,7 +157,7 @@ export default function History2023Section() {
   const currentPeriod = historyPeriods[currentStep];
   const IconComponent = currentPeriod.icon;
 
-  const goToStep = (index: any) => {
+  const goToStep = (index: number) => {
     setCurrentStep(index);
     setIsPlaying(false);
   };

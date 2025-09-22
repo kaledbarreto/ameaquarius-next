@@ -1,6 +1,6 @@
 "use client";
 
-import Logo from "@/assets/images/logo.png";
+import Logo from "../assets/images/logo.png";
 import { cn } from "@/lib/utils";
 import {
   Instagram,
@@ -83,7 +83,7 @@ export function Navigation() {
                 className="w-full flex flex-col items-center justify-center"
               >
                 <img
-                  src={Logo.src}
+                  src={typeof Logo === "string" ? Logo : Logo.src}
                   alt="Logo Ameaquarius"
                   className="h-12 w-auto"
                 />
@@ -148,7 +148,7 @@ export function Navigation() {
           </button>
           <div className="w-full flex flex-col items-center justify-center p-4 shadow-lg bg-white">
             <img
-              src={Logo.src}
+              src={typeof Logo === "string" ? Logo : Logo.src}
               alt="Logo Ameaquarius"
               className="h-12 w-auto"
             />
