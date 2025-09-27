@@ -16,6 +16,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Nossa História", href: "/OurHistory" },
   { name: "Notícias", href: "/news" },
+  { name: "Eventos", href: "/events" },
 ];
 
 function FloatingSocial() {
@@ -25,7 +26,7 @@ function FloatingSocial() {
         href="https://instagram.com/ameaquarius"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-gray-100 rounded-full shadow-lg p-3 hover:bg-[#DD2A7B]/10 transition-colors duration-300"
+        className="bg-gray-100 rounded-full shadow-lg p-3 hover:bg-[#ffe5f1] transition-colors duration-300"
       >
         {/* Instagram gradient: #F58529, #DD2A7B, #8134AF, #515BD4 */}
         <svg width="24" height="24" viewBox="0 0 24 24" className="w-6 h-6">

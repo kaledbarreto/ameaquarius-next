@@ -17,6 +17,7 @@ import {
 import news01 from "../../assets/images/news/news_01.png";
 import news02 from "../../assets/images/news/news_02.png";
 import magazine01 from "../../assets/images/news/magazine_01.png";
+import Footer from "@/components/Footer";
 
 export default function AquariusNoticiasPage() {
   const [activeSection, setActiveSection] = useState("noticias");
@@ -120,7 +121,7 @@ export default function AquariusNoticiasPage() {
                   <button
                     key={section.id}
                     onClick={() => setActiveSection(section.id)}
-                    className={`flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 ${
+                    className={`flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 cursor-pointer ${
                       activeSection === section.id
                         ? "bg-white text-blue-700 shadow-lg"
                         : "bg-white/20 text-white hover:bg-white/30 border border-white/30"
@@ -158,7 +159,7 @@ export default function AquariusNoticiasPage() {
 
       {/* Conteúdo principal */}
       <section className="relative py-16 lg:py-24 cursor-pointer">
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="container mx-auto px-6 lg:px-12 mb-16">
           {/* Seção de Notícias */}
           {activeSection === "noticias" && (
             <div className="space-y-8">
@@ -470,7 +471,20 @@ export default function AquariusNoticiasPage() {
             </div>
           )}
         </div>
+
+        {/* Curva decorativa inferior */}
+        <div className="absolute bottom-0 left-0 w-full h-16 overflow-hidden">
+          <svg
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            className="w-full h-full fill-gray-900"
+          >
+            <path d="M0,0 C300,80 500,120 800,60 C1000,20 1100,40 1200,80 L1200,120 L0,120 Z" />
+          </svg>
+        </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
