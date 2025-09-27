@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Nossa História", href: "/OurHistory" },
+  { name: "Notícias", href: "/news" },
 ];
 
 function FloatingSocial() {
