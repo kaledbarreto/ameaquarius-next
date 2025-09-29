@@ -17,6 +17,7 @@ const navigation = [
   { name: "Nossa História", href: "/OurHistory" },
   { name: "Notícias", href: "/news" },
   { name: "Eventos", href: "/events" },
+  { name: "Cursos", href: "/courses" },
 ];
 
 function FloatingSocial() {
