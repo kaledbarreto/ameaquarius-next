@@ -1,21 +1,20 @@
 "use client";
 
-import React, { useState } from "react";
+import Footer from "@/components/Footer";
 import {
-  Shield,
   AlertTriangle,
-  FileText,
-  Download,
+  ArrowRight,
+  CheckCircle,
   Clock,
+  Download,
+  FileText,
+  Mail,
   MapPin,
   Phone,
-  Mail,
-  CheckCircle,
+  Shield,
   Users,
-  Building,
-  ArrowRight,
-  ExternalLink,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function ProjetoPrediosSemFogoPage() {
   const [activeSection, setActiveSection] = useState("sobre");
@@ -127,7 +126,7 @@ export default function ProjetoPrediosSemFogoPage() {
 
       {/* Conteúdo principal */}
       <section className="relative py-16 lg:py-24">
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="container mx-auto px-6 lg:px-12 mb-8">
           {/* Seção Sobre o Projeto */}
           {activeSection === "sobre" && (
             <div className="max-w-4xl mx-auto space-y-8">
@@ -385,7 +384,20 @@ export default function ProjetoPrediosSemFogoPage() {
             </div>
           )}
         </div>
+
+        {/* Curva decorativa inferior */}
+        <div className="absolute bottom-0 left-0 w-full h-16 overflow-hidden">
+          <svg
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            className="w-full h-full fill-gray-900"
+          >
+            <path d="M0,120 C200,40 400,0 600,60 C800,120 1000,80 1200,40 L1200,120 L0,120 Z" />
+          </svg>
+        </div>
       </section>
+
+      <Footer />
     </div>
   );
 }

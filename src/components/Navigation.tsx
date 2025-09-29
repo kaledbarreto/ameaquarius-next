@@ -18,7 +18,7 @@ const navigation = [
   { name: "Notícias", href: "/news" },
   { name: "Eventos", href: "/events" },
   { name: "Cursos", href: "/courses" },
-  { name: "Contato", href: "/" },
+  { name: "Contato", href: "/contact" },
 ];
 
 function FloatingSocial() {
