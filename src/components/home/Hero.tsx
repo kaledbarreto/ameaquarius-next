@@ -1,4 +1,3 @@
-import React from "react";
 import { ChevronDown, Users, Home, Award } from "lucide-react";
 import HeroBackground from "../../assets/images/home/hero_bg.png";
 

@@ -1,11 +1,11 @@
 import React from "react";
 import {
   Trophy,
-  Target,
   Users,
   Handshake,
   ArrowRight,
   Star,
+  Target,
 } from "lucide-react";
 
 export default function Achievements() {

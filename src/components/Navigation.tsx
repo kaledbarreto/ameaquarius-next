@@ -14,10 +14,11 @@ import { useEffect, useState } from "react";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Nossa História", href: "/OurHistory" },
+  { name: "Sobre", href: "/OurHistory" },
   { name: "Notícias", href: "/news" },
   { name: "Eventos", href: "/events" },
   { name: "Cursos", href: "/courses" },
+  { name: "Documentos", href: "/documents" },
   { name: "Contato", href: "/contact" },
 ];
 

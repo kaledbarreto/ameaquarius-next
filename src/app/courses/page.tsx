@@ -51,7 +51,7 @@ export default function ProjetoPrediosSemFogoPage() {
         "Ficha de cadastramento para participação no Projeto Prédio Sem Fogo.",
       tipo: "PDF",
       tamanho: "260 KB",
-      arquivo: "../../assets/documents/courses/projeto-predio-sem-fogo.pdf",
+      arquivo: "/assets/files/courses/PROJETO_PREDIO_SEM_FOGO.pdf",
     },
   ];
 
@@ -347,7 +347,7 @@ export default function ProjetoPrediosSemFogoPage() {
 
                         <div className="flex gap-2">
                           <a
-                            href="/assets/documents/courses/projeto-predio-sem-fogo.pdf"
+                            href={material.arquivo}
                             download
                             className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
                           >
