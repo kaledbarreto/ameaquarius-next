@@ -13,6 +13,7 @@ import {
   Send,
 } from "lucide-react";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   nome: string;
@@ -40,18 +41,30 @@ export default function ContatoPage() {
 
   const handleSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    setFormStatus("standby");
+    setTimeout(() => setFormStatus("idle"), 2000);
+    // EmailJS temporariamente desativado
+    // Para reativar, descomente o bloco abaixo:
+    /*
     setFormStatus("sending");
-
-    // Simulação de envio
-    setTimeout(() => {
+    const SERVICE_ID = "service_0y4dtlv";
+    const TEMPLATE_ID = "template_ltkp4sr";
+    const PUBLIC_KEY = "0iORqeR7J_GxuaDIY";
+    const templateParams = {
+      from_name: formData.nome,
+      from_email: formData.email,
+      message: formData.mensagem,
+    };
+    try {
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
       setFormStatus("success");
       setFormData({ nome: "", email: "", mensagem: "" });
-
-      // Reset status após 3 segundos
-      setTimeout(() => {
-        setFormStatus("idle");
-      }, 3000);
-    }, 1500);
+      setTimeout(() => setFormStatus("idle"), 3000);
+    } catch (error) {
+      setFormStatus("error");
+      setTimeout(() => setFormStatus("idle"), 3000);
+    }
+    */
   };
 
   const contatoInfo = {
@@ -151,7 +164,7 @@ export default function ContatoPage() {
                       name="nome"
                       value={formData.nome}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 text-black border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                       placeholder="Seu nome"
                     />
                   </div>
@@ -166,7 +179,7 @@ export default function ContatoPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 text-black border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                       placeholder="Seu e-mail"
                     />
                   </div>
@@ -181,7 +194,7 @@ export default function ContatoPage() {
                       rows={6}
                       value={formData.mensagem}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
+                      className="w-full px-4 py-3 border text-black border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
                       placeholder="Sua mensagem"
                     />
                   </div>
@@ -206,7 +219,12 @@ export default function ContatoPage() {
                   {/* Botão de Envio */}
                   <button
                     onClick={handleSubmit}
-                    disabled={formStatus === "sending"}
+                    disabled={
+                      formStatus === "sending" ||
+                      !formData.nome.trim() ||
+                      !formData.email.trim() ||
+                      !formData.mensagem.trim()
+                    }
                     className="w-full py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
                   >
                     <span className="flex items-center justify-center gap-2">
