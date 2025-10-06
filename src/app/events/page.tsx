@@ -37,7 +37,7 @@ export default function AquariusEventosPage() {
       "A programação contou com diversas atrações, incluindo a surpresa Elsa da SA, que trouxe arte, gastronomia e economia criativa para o bairro.",
       "Além disso, as crianças tiveram oportunidade de conhecer o Papai Noel, presenteadas com brinquedos, aguardados chegaram do Papai Noel, encantaram todas as gerações.",
       "O evento também ofereceu o ponto do Patrício de Barrao, bem conceituado ao vereador Osiriano Palhinha, em reconhecimento a sua dedicação em favor da comunidade.",
-      "A cobertura completa do Natal Aquarius 2024 pode ser conferida em vídeo no site www.ameaquarius.org, no Instagram @ameaquarius, além do acesso direto para a AmeAquarius Tv Real no destaque no botões em detalhe.",
+      "A cobertura completa do Natal Aquarius 2024 pode ser conferida em vídeo no site www.ameaquarius.org, no Instagram @associacaoameaquarius, além do acesso direto para a AmeAquarius Tv Real no destaque no botões em detalhe.",
       "É a sintonia cada vez maior do povo como no maior esforço, com caridade, roda farias é ainda mais comunidades para celebrar e fortalecer nossa Comunidade!",
     ],
     data: "23 de Novembro de 2024",

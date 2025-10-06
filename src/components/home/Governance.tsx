@@ -8,6 +8,7 @@ import {
   ArrowDown,
   Check,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Governance() {
   const governanceStructure = [
@@ -157,18 +158,24 @@ export default function Governance() {
 
           {/* CTA para relatórios */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group px-8 py-4 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl w-full sm:w-auto flex justify-center">
+            <Link
+              href="/documents"
+              className="group px-8 py-4 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl w-full sm:w-auto flex justify-center"
+            >
               <span className="flex items-center gap-2 cursor-pointer justify-center w-full">
                 Ver Relatórios Anuais
                 <div className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
                   <FileCheck className="w-4 h-4" />
                 </div>
               </span>
-            </button>
+            </Link>
 
-            <button className="px-8 py-4 bg-transparent border-2 border-red-300 hover:border-red-500 hover:bg-red-50 text-red-600 font-semibold rounded-full transition-all duration-300 cursor-pointer ">
+            <Link
+              href="/documents"
+              className="px-8 py-4 bg-transparent border-2 border-red-300 hover:border-red-500 hover:bg-red-50 text-red-600 font-semibold rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center"
+            >
               Documentos Públicos
-            </button>
+            </Link>
           </div>
         </div>
       </div>

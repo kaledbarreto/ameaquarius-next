@@ -9,6 +9,7 @@ import {
   Handshake,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 import Logo from "../../assets/images/logo.png";
 import CarouselImage01 from "../../assets/images/home/carousel_01.png";
 import CarouselImage02 from "../../assets/images/home/carousel_02.png";
@@ -151,15 +152,18 @@ export default function JoinUs() {
             </div>
 
             {/* CTA */}
-            <div className="pt-4">
-              <button className="group px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-red-500/25 cursor-pointer">
+            <div className="pt-4 max-w-[300px]">
+              <Link
+                href="/contact"
+                className="group px-10 py-5 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-red-500/25 cursor-pointer flex items-center justify-center"
+              >
                 <span className="flex items-center gap-3 text-lg">
                   Quero me Associar
                   <div className="w-0 group-hover:w-5 transition-all duration-300 overflow-hidden">
                     <ArrowRight className="w-5 h-5" />
                   </div>
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
 

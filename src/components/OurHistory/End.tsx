@@ -11,6 +11,7 @@ import {
   Play,
   Pause,
 } from "lucide-react";
+import Link from "next/link";
 
 import end01 from "../../assets/images/ourHistory/end_01.jpeg";
 import end02 from "../../assets/images/ourHistory/end_02.jpeg";
@@ -378,14 +379,17 @@ export default function History2023Section() {
               nossa comunidade.
             </p>
 
-            <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <Link
+              href="/contact"
+              className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center max-w-[300px] mx-auto"
+            >
               <span className="flex items-center gap-2">
                 Faça Parte Desta História
                 <div className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

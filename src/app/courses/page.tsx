@@ -28,8 +28,8 @@ export default function ProjetoPrediosSemFogoPage() {
     local: "Condomínio Mílton de Bahia",
     horarios: "Das 9h às 17h",
     contatos: [
-      { tipo: "WhatsApp", valor: "(71) 99999-9999" },
-      { tipo: "E-mail", valor: "contato@ameaquarius.org.br" },
+      { tipo: "WhatsApp", valor: "(71) 99185-7238" },
+      { tipo: "E-mail", valor: "associcaoameaquarius@gmail.com" },
     ],
   };
 

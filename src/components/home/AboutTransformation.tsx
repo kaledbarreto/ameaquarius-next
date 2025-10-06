@@ -8,6 +8,7 @@ import {
   Users,
   Video,
 } from "lucide-react";
+import Link from "next/link";
 import AboutImage01 from "../../assets/images/home/about_01.jpeg";
 import AboutImage02 from "../../assets/images/home/about_02.jpeg";
 import AboutImage03 from "../../assets/images/home/about_03.jpeg";
@@ -120,14 +121,17 @@ export default function AboutTransformation() {
             </div>
             {/* CTA */}
             <div className="pt-4 flex justify-center">
-              <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer">
+              <Link
+                href="/OurHistory"
+                className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+              >
                 <span className="flex items-center gap-2">
                   Conheça Nosso Trabalho
                   <div className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
                     <CheckCircle className="w-4 h-4" />
                   </div>
                 </span>
-              </button>
+              </Link>
             </div>
           </div>
           {/* Coluna de imagens - AboutUs */}

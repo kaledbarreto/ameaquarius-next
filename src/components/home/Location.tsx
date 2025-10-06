@@ -21,13 +21,13 @@ export default function Location() {
     {
       icon: Phone,
       title: "Telefone",
-      info: "(71) 3234-5678",
+      info: "(71) 99185-7238",
       details: "Atendimento de segunda a sexta",
     },
     {
       icon: Mail,
       title: "E-mail",
-      info: "contato@ameaquarius.com.br",
+      info: "associcaoameaquarius@gmail.com",
       details: "Resposta em até 24h",
     },
     {

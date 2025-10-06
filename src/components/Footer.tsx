@@ -1,45 +1,45 @@
 import {
   Award,
   Clock,
-  Facebook,
   FileText,
   Heart,
   Instagram,
-  Linkedin,
   Mail,
   MapPin,
   Phone,
   Shield,
   Users,
-  Youtube,
 } from "lucide-react";
-import Logo from "@/assets/images/logo.png";
+
+import LogoWhite from "@/assets/images/logo-white.png";
 
 export default function Footer() {
   const quickLinks = [
-    { name: "Quem Somos", href: "#about" },
-    { name: "Diretoria", href: "#board" },
-    { name: "Governança", href: "#governance" },
-    { name: "Conquistas", href: "#achievements" },
+    { name: "Home", href: "/" },
+    { name: "Sobre", href: "/OurHistory" },
+    { name: "Notícias", href: "/news" },
+    { name: "Eventos", href: "/events" },
+    { name: "Cursos", href: "/courses" },
+    { name: "Documentos", href: "/documents" },
+    { name: "Contato", href: "/contact" },
   ];
 
-  const services = [
-    { name: "Associação", href: "#join" },
-    { name: "Relatórios", href: "#reports" },
-    { name: "Documentos", href: "#documents" },
-    { name: "Projetos", href: "#projects" },
-  ];
+  const services = [{ name: "Associe-se", href: "/contact" }];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Youtube, href: "#", label: "Youtube" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    // { icon: Facebook, href: "#", label: "Facebook" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/associacaoameaquarius?igsh=MXZ2OHdoNXZmNW16ZQ==",
+      label: "Instagram",
+    },
+    // { icon: Youtube, href: "#", label: "Youtube" },
+    // { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 
   return (
     <footer className="relative bg-gradient-to-br from-slate-900 via-gray-900 to-slate-800 ">
@@ -68,9 +68,10 @@ export default function Footer() {
               <div className="space-y-4">
                 <div className="flex items-center justify-center lg:justify-start">
                   <img
-                    src={Logo.src}
+                    src={LogoWhite.src}
                     alt="Logo AMEAQUARIUS"
-                    className="h-10 lg:h-14 w-auto"
+                    className="h-10 lg:h-14 w-auto mx-auto"
+                    style={{ display: "block" }}
                   />
                 </div>
               </div>
@@ -180,10 +181,10 @@ export default function Footer() {
                   <Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                   <div>
                     <a
-                      href="mailto:contato@ameaquarius.com.br"
+                      href="mailto:associcaoameaquarius@gmail.com"
                       className="text-gray-300 hover:text-cyan-400 transition-colors break-all"
                     >
-                      contato@ameaquarius.com.br
+                      associcaoameaquarius@gmail.com
                     </a>
                   </div>
                 </div>
@@ -209,6 +210,7 @@ export default function Footer() {
                       <a
                         key={index}
                         href={social.href}
+                        target="_blank"
                         aria-label={social.label}
                         className="w-10 h-10 bg-gray-700 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-blue-500 rounded-xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 group"
                       >

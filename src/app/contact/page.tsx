@@ -64,19 +64,19 @@ export default function ContatoPage() {
     contatos: [
       {
         tipo: "Telefone Principal",
-        valor: "(71) 3234-5678",
+        valor: "(71) 991857238",
         icone: Phone,
         descricao: "Atendimento de segunda a sexta, 8h às 18h",
       },
       {
         tipo: "WhatsApp",
-        valor: "(71) 99999-9999",
+        valor: "(71) 99185-7238",
         icone: MessageCircle,
         descricao: "Atendimento rápido via WhatsApp",
       },
       {
         tipo: "E-mail Institucional",
-        valor: "contato@ameaquarius.org.br",
+        valor: "associcaoameaquarius@gmail.com",
         icone: Mail,
         descricao: "Resposta em até 24 horas",
       },

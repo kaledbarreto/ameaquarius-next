@@ -1,5 +1,6 @@
 import { ChevronDown, Users, Home, Award } from "lucide-react";
 import HeroBackground from "../../assets/images/home/hero_bg.png";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -68,14 +69,17 @@ export default function Hero() {
 
           {/* Call to Actions */}
           <div className="flex flex-col md:flex-row gap-3 md:gap-4 justify-center items-center">
-            <button className="group px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer">
+            <Link
+              href="/contact"
+              className="group px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+            >
               <span className="flex items-center gap-2">
                 Associe-se Agora
                 <div className="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
                   <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
                 </div>
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
