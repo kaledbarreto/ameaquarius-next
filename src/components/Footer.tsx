@@ -160,8 +160,13 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
                   <div>
+                    <p className="text-gray-300">
+                      Av Professor Magalhães Neto, 1561 Bloco A, Condomínio HBA,
+                      S1, ADM
+                    </p>
+                    <p className="text-gray-300">41771-000</p>
                     <p className="text-gray-300">Bairro Aquarius</p>
-                    <p className="text-gray-400 text-sm">Salvador - BA</p>
+                    <p className="text-gray-400 text-sm">Salvador - Bahia</p>
                   </div>
                 </div>
 

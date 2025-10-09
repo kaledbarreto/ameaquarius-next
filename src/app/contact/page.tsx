@@ -69,8 +69,8 @@ export default function ContatoPage() {
 
   const contatoInfo = {
     endereco: {
-      rua: "Rua Desembargador Álvaro Clemente de Oliveira",
-      cep: "41771-020",
+      rua: "Av Professor Magalhães Neto,1561 Bloco A, Condomínio HBA, S1, ADM",
+      cep: "41771-000",
       bairro: "Bairro Aquarius",
       cidade: "Salvador - Bahia",
     },
