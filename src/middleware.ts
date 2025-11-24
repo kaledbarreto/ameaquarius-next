@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // Set to true to block all routes (maintenance mode)
-const MAINTENANCE_MODE = false;
+const MAINTENANCE_MODE = true;
 
 export function middleware(request: NextRequest) {
   if (MAINTENANCE_MODE) {
@@ -17,7 +17,7 @@ export function middleware(request: NextRequest) {
 
     // Redirect all other routes to not-found
     const url = request.nextUrl.clone();
-    
+
     // Prevent infinite redirect loop
     if (url.pathname !== '/not-found') {
       url.pathname = '/not-found';
